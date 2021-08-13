@@ -3,4 +3,4 @@ asyncapi: 2.0.0
 info:
   title: Transaction Service
   version: 1.0.0
-  description: Transaction Service
+  description: Transaction Service New
