@@ -1,3 +1,4 @@
+---
 asyncapi: 2.0.0
 info:
   title: Transaction Service
@@ -12,5 +13,12 @@ channels:
         name: Valid Transaction Topic
         title: Valid Transaction Topic
         summary: Valid Transaction Topic
+        examples:
+        - payload:
+            txnId: EC9AFB2E-5357-4D8D-821E-862FFBEDD885
+            createdDate: 2021-08-13:01:00:00 SGT
+            txnAmount: 100
+            currency: SGD
+          name: ValidTransactionsExample
         payload:
-          $ref: 'https://raw.githubusercontent.com/sks336/tmp-asyncapi-doc/master/transactionSvc/payloads/validTransactions_v3.json'
+          $ref: https://raw.githubusercontent.com/sks336/tmp-asyncapi-doc/master/transactionSvc/payloads/validTransactions_v3.json
