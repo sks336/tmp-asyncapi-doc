@@ -20,4 +20,4 @@ channels:
             currency: SGD
           name: ValidTransactionsExample
         payload:
-          $ref: https://raw.githubusercontent.com/sks336/tmp-asyncapi-doc/master/transactionSvc/payloads/validTransactions_v3.json
+          $ref: 'https://raw.githubusercontent.com/sks336/tmp-asyncapi-doc/master/transactionSvc/avros/validTransactions_v3.json'
