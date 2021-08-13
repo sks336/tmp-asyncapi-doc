@@ -1,0 +1,17 @@
+---
+asyncapi: 2.0.0
+info:
+  title: Transaction Service
+  version: 1.0.0
+  description: Transaction Service New
+channels:
+  validTransactionsTopic_v3:
+    subscribe:
+      message:
+        schemaFormat: application/vnd.apache.avro;version=1.9.0
+        contentType: application/json
+        name: Valid Transaction Topic
+        title: Valid Transaction Topic
+        summary: Valid Transaction Topic
+        payload:
+          $ref: http://192.168.10.116:8181/ui/artifacts/orderCreate/versions/1
