@@ -1,0 +1,37 @@
+asyncapi: 2.0.0
+info:
+  title: Order Service
+  version: 1.0.0
+  description: Order Service
+channels:
+  orderCreateTopic_v2:
+    subscribe:
+      message:
+        schemaFormat: application/vnd.apache.avro;version=1.9.0
+        contentType: application/json
+        name: Order Create Request
+        title: Order Create Request
+        summary: Order Create Request
+        payload:
+          $ref: 'http://192.168.10.116:8181/ui/artifacts/orderCreate/versions/1'
+  orderUpdateTopic:
+    subscribe:
+      message:
+        schemaFormat: application/vnd.apache.avro;version=1.9.0
+        contentType: application/json
+        name: Order Update Request
+        title: Order Update Request
+        summary: Order Update Request
+        payload:
+          $ref: 'http://192.168.10.116:8181/ui/artifacts/orderUpdate/versions/1'
+  paymentTopic_v4:
+    description: payment
+    publish:
+      message:
+        schemaFormat: application/vnd.apache.avro;version=1.9.0
+        contentType: application/json
+        name: Payment For the Order
+        title: Payment For the Order
+        summary: Payment For the Order
+        payload:
+          $ref: 'http://192.168.10.116:8181/ui/artifacts/payment/versions/2'
