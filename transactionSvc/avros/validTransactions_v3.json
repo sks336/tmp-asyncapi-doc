@@ -1,0 +1,23 @@
+{
+  "namespace": "com.sachin.work",
+  "type": "record",
+  "name": "ValidTransactions",
+  "fields": [
+    {
+      "name": "txnId",
+      "type": "string"
+    },
+    {
+      "name": "createdDate",
+      "type": "string"
+    },
+    {
+      "name": "txnAmount",
+      "type": "double"
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    }
+  ]
+}
