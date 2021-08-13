@@ -13,4 +13,4 @@ channels:
         title: Valid Transaction Topic
         summary: Valid Transaction Topic
         payload:
-          $ref: http://192.168.10.116:8181/ui/artifacts/orderCreate/versions/1
+          $ref: 'https://raw.githubusercontent.com/sks336/tmp-asyncapi-doc/master/transactionSvc/payloads/validTransactions_v3.json'
